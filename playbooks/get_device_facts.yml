@@ -1,0 +1,4 @@
+- vmanage_device_facts:
+    user: "{{ ansible_user }}"
+    host: "{{ ansible_host }}"
+    password: "{{ ansible_password }}"
