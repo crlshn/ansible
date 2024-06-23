@@ -2,7 +2,7 @@
   gather_facts: true
   tasks:
     - name: run show version on remote devices
-      check_all: true
+      check_all: yes
       ansible.netcommon.cli_command:
         command: 
         - show control connections
