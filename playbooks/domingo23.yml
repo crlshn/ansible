@@ -38,3 +38,6 @@
         - show clock
         - show policy from-vsmart
         - show system status
+    - name: show the output of the command
+      debug:
+        var: gather_facts 
