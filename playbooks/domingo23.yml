@@ -2,7 +2,7 @@
   tasks:
     - name: RUN show commands
       register: evidence_sun_23_june_2024
-      ansible.netcommon.network_cli:
+      ios_command:
         commands:
           - show control connections
           - show control local-properties
@@ -38,5 +38,5 @@
           - show policy from-vsmart
           - show system status
     - name: Display the evidence
-      ansible.builtin.debug:
+      debug:
         var: evidence_sun_23_june_2024
