@@ -1,14 +1,50 @@
 ---
-- name: Network Getting Started First Playbook
+- name: Network Getting Evidence Playbook
   connection: ansible.netcommon.network_cli
   gather_facts: false
   hosts: all
   tasks:
-    - name: RUN show version
-      register: show_version
+    - name: RUN show commands
+      register: evidence_sun_23_june_2024
       ansible.netcommon.network_cli:
         commands:
+          - show control connections
+          - show control local-properties
+          - show run system
+          - show interface description | tab
+          - show interface | tab
+          - show arp
+          - show control summary
           - show version
-    - name: Display the show version output
+          - show hardware inventory | tab
+          - show system status
+          - show ospf neighbor
+          - show ip route
+          - show ip routes summary
+          - show hardware real-time-information
+          - show ntp associations
+          - show omp peers
+          - show omp summary
+          - show omp routes
+          - show tunnel statistics
+          - show ntp status
+          - show tunnel statistics
+          - show ipsec inbound-connections
+          - show ipsec outbound-connections
+          - show bfd summary
+          - show bfd sessions
+          - show control connections-history
+          - show running-config
+          - show logging
+          - show system
+          - show software
+          - show clock
+          - show policy from-vsmart
+          - show system status
+    - name: Display the evidence
       ansible.builtin.debug:
-        var: show_version.stdout
+        var: evidence_sun_23_june_2024
+     
+
+
+
