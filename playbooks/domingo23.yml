@@ -1,5 +1,4 @@
 - name: Network Getting Evidence Playbook
-  connection: ansible.netcommon.network_cli
   tasks:
     - name: RUN show commands
       register: evidence_sun_23_june_2024
