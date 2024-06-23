@@ -1,9 +1,10 @@
 - hosts: all
   name: Network Getting Evidence Playbook
+  gather_facts: no
   tasks:
     - name: RUN show commands
       register: evidence_sun_23_june_2024
-      ios_command:
+      ansible.netcommon.network_cli:
         commands:
           - show control connections
           - show control local-properties
