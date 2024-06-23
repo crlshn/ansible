@@ -1,4 +1,5 @@
-- name: Network Getting Evidence Playbook
+- hosts: all
+  name: Network Getting Evidence Playbook
   tasks:
     - name: RUN show commands
       register: evidence_sun_23_june_2024
