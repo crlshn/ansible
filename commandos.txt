@@ -1,0 +1,33 @@
+show control connections
+show control local-properties
+show run system
+show interface description | tab
+show interface | tab
+show arp
+show control summary
+show version
+show hardware inventory | tab
+show system status
+show ospf neighbor
+show ip route
+show ip routes summary
+show hardware real-time-information
+show ntp associations
+show omp peers
+show omp summary
+show omp routes
+show tunnel statistics
+show ntp status
+show tunnel statistics
+show ipsec inbound-connections
+show ipsec outbound-connections
+show bfd summary
+show bfd sessions
+show control connections-history
+show running-config
+show logging
+show system
+show software
+show clock
+show policy from-vsmart
+show system statu
