@@ -3,7 +3,7 @@
   tasks:
     - name: run show version on remote devices
       register: show_control_connections
-      command: show control connections
+      shell: show control connections
     - name: run show control local-properties
       register: show_control_local_properties
       command: show control local-properties
