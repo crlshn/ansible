@@ -2,7 +2,7 @@ with open('commandos.txt', 'r') as f:
     commands = f.read().splitlines()
 
     with open('playbooks/comandos.yml', 'w') as playbook:
-        playbook.write('- hosts: localhost\n')
+        playbook.write('- hosts: all\n')
         playbook.write('  gather_facts: false\n')
         playbook.write('  ignore_unreachable: true\n')
         playbook.write('  tasks:\n')
