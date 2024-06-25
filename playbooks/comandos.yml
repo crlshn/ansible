@@ -15,7 +15,7 @@
     poll: 10
     ios_command:
         commands: show control local-properties
-    register: evidence_show_control_local-properties
+    register: evidence_show_control_local_properties
   - name: run show run system to gather evidence
     ignore_errors: true
     timeout: 3600
@@ -29,14 +29,14 @@
     poll: 10
     ios_command:
         commands: show interface description | tab
-    register: evidence_show_interface_description_|_tab
+    register: evidence_show_interface_description___tab
   - name: run show interface | tab to gather evidence
     ignore_errors: true
     timeout: 3600
     poll: 10
     ios_command:
         commands: show interface | tab
-    register: evidence_show_interface_|_tab
+    register: evidence_show_interface___tab
   - name: run show arp to gather evidence
     ignore_errors: true
     timeout: 3600
@@ -64,7 +64,7 @@
     poll: 10
     ios_command:
         commands: show hardware inventory | tab
-    register: evidence_show_hardware_inventory_|_tab
+    register: evidence_show_hardware_inventory___tab
   - name: run show system status to gather evidence
     ignore_errors: true
     timeout: 3600
@@ -99,7 +99,7 @@
     poll: 10
     ios_command:
         commands: show hardware real-time-information
-    register: evidence_show_hardware_real-time-information
+    register: evidence_show_hardware_real_time_information
   - name: run show ntp associations to gather evidence
     ignore_errors: true
     timeout: 3600
@@ -155,14 +155,14 @@
     poll: 10
     ios_command:
         commands: show ipsec inbound-connections
-    register: evidence_show_ipsec_inbound-connections
+    register: evidence_show_ipsec_inbound_connections
   - name: run show ipsec outbound-connections to gather evidence
     ignore_errors: true
     timeout: 3600
     poll: 10
     ios_command:
         commands: show ipsec outbound-connections
-    register: evidence_show_ipsec_outbound-connections
+    register: evidence_show_ipsec_outbound_connections
   - name: run show bfd summary to gather evidence
     ignore_errors: true
     timeout: 3600
@@ -183,14 +183,14 @@
     poll: 10
     ios_command:
         commands: show control connections-history
-    register: evidence_show_control_connections-history
+    register: evidence_show_control_connections_history
   - name: run show running-config to gather evidence
     ignore_errors: true
     timeout: 3600
     poll: 10
     ios_command:
         commands: show running-config
-    register: evidence_show_running-config
+    register: evidence_show_running_config
   - name: run show logging to gather evidence
     ignore_errors: true
     timeout: 3600
@@ -225,7 +225,7 @@
     poll: 10
     ios_command:
         commands: show policy from-vsmart
-    register: evidence_show_policy_from-vsmart
+    register: evidence_show_policy_from_vsmart
   - name: run show system statu to gather evidence
     ignore_errors: true
     timeout: 3600
@@ -238,7 +238,7 @@
       var: evidence_show_control_connections["stdout_lines"][0]
   - name: display evidence show control local-properties
     debug:
-      var: evidence_show_control_local-properties["stdout_lines"][0]
+      var: evidence_show_control_local_properties["stdout_lines"][0]
   - name: display evidence show run system
     debug:
       var: evidence_show_run_system["stdout_lines"][0]
@@ -274,7 +274,7 @@
       var: evidence_show_ip_routes_summary["stdout_lines"][0]
   - name: display evidence show hardware real-time-information
     debug:
-      var: evidence_show_hardware_real-time-information["stdout_lines"][0]
+      var: evidence_show_hardware_real_time_information["stdout_lines"][0]
   - name: display evidence show ntp associations
     debug:
       var: evidence_show_ntp_associations["stdout_lines"][0]
@@ -298,10 +298,10 @@
       var: evidence_show_tunnel_statistics["stdout_lines"][0]
   - name: display evidence show ipsec inbound-connections
     debug:
-      var: evidence_show_ipsec_inbound-connections["stdout_lines"][0]
+      var: evidence_show_ipsec_inbound_connections["stdout_lines"][0]
   - name: display evidence show ipsec outbound-connections
     debug:
-      var: evidence_show_ipsec_outbound-connections["stdout_lines"][0]
+      var: evidence_show_ipsec_outbound_connections["stdout_lines"][0]
   - name: display evidence show bfd summary
     debug:
       var: evidence_show_bfd_summary["stdout_lines"][0]
@@ -310,10 +310,10 @@
       var: evidence_show_bfd_sessions["stdout_lines"][0]
   - name: display evidence show control connections-history
     debug:
-      var: evidence_show_control_connections-history["stdout_lines"][0]
+      var: evidence_show_control_connections_history["stdout_lines"][0]
   - name: display evidence show running-config
     debug:
-      var: evidence_show_running-config["stdout_lines"][0]
+      var: evidence_show_running_config["stdout_lines"][0]
   - name: display evidence show logging
     debug:
       var: evidence_show_logging["stdout_lines"][0]
@@ -328,7 +328,7 @@
       var: evidence_show_clock["stdout_lines"][0]
   - name: display evidence show policy from-vsmart
     debug:
-      var: evidence_show_policy_from-vsmart["stdout_lines"][0]
+      var: evidence_show_policy_from_vsmart["stdout_lines"][0]
   - name: display evidence show system statu
     debug:
       var: evidence_show_system_statu["stdout_lines"][0]
