@@ -5,6 +5,8 @@
   tasks:
     - name: run show commands to gather evidence
       ignore_errors: true
+      timeout: 3600
+      poll: 10
       ios_command:
         commands: 
           - show control connections
