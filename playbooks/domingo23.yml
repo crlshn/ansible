@@ -1,14 +1,10 @@
 ---
 - hosts: all
   gather_facts: false
+  ignore_unreachable: true
   tasks:
-    - name: try ls
-      command: ls
-      register: ls
-    - name: GATHERING FACTS
-      ios_facts:
-        gather_subset: hardware
-    - name: run show to gather evidence
+    - name: run show commands to gather evidence
+      ignore_errors: true
       ios_command:
         commands: 
           - show control connections
@@ -44,7 +40,7 @@
           - show clock
           - show policy from-vsmart
           - show system statu
-      register: version
-    - name: display version
+      register: evidence
+    - name: display evidence
       debug:
-        var: version["stdout_lines"][0]
+        var: evidence["stdout_lines"][0]
