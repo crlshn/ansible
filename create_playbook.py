@@ -16,8 +16,8 @@ with open('commandos.txt', 'r') as f:
             playbook.write('        commands: ' + command + '\n')
             playbook.write(f'    register: evidence_{command_no_spaces}\n')
         for command in commands:
-            command_no_spaces = command.replace(' ', '_').replace('-', '_')
+            command_no_spaces = command.replace(' ', '_').replace('-', '_').replace('|', '_')
             playbook.write(f'  - name: display evidence {command}\n')
             playbook.write('    debug:\n')
             playbook.write(
-                f'      var: evidence_{command_no_spaces}["stdout_lines"][0]\n')
+                f'      var: evidence_{command_no_spaces}["stdout_lines"]\n')

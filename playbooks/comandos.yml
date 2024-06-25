@@ -235,100 +235,100 @@
     register: evidence_show_system_statu
   - name: display evidence show control connections
     debug:
-      var: evidence_show_control_connections["stdout_lines"][0]
+      var: evidence_show_control_connections["stdout_lines"]
   - name: display evidence show control local-properties
     debug:
-      var: evidence_show_control_local_properties["stdout_lines"][0]
+      var: evidence_show_control_local_properties["stdout_lines"]
   - name: display evidence show run system
     debug:
-      var: evidence_show_run_system["stdout_lines"][0]
+      var: evidence_show_run_system["stdout_lines"]
   - name: display evidence show interface description | tab
     debug:
-      var: evidence_show_interface_description_|_tab["stdout_lines"][0]
+      var: evidence_show_interface_description___tab["stdout_lines"]
   - name: display evidence show interface | tab
     debug:
-      var: evidence_show_interface_|_tab["stdout_lines"][0]
+      var: evidence_show_interface___tab["stdout_lines"]
   - name: display evidence show arp
     debug:
-      var: evidence_show_arp["stdout_lines"][0]
+      var: evidence_show_arp["stdout_lines"]
   - name: display evidence show control summary
     debug:
-      var: evidence_show_control_summary["stdout_lines"][0]
+      var: evidence_show_control_summary["stdout_lines"]
   - name: display evidence show version
     debug:
-      var: evidence_show_version["stdout_lines"][0]
+      var: evidence_show_version["stdout_lines"]
   - name: display evidence show hardware inventory | tab
     debug:
-      var: evidence_show_hardware_inventory_|_tab["stdout_lines"][0]
+      var: evidence_show_hardware_inventory___tab["stdout_lines"]
   - name: display evidence show system status
     debug:
-      var: evidence_show_system_status["stdout_lines"][0]
+      var: evidence_show_system_status["stdout_lines"]
   - name: display evidence show ospf neighbor
     debug:
-      var: evidence_show_ospf_neighbor["stdout_lines"][0]
+      var: evidence_show_ospf_neighbor["stdout_lines"]
   - name: display evidence show ip route
     debug:
-      var: evidence_show_ip_route["stdout_lines"][0]
+      var: evidence_show_ip_route["stdout_lines"]
   - name: display evidence show ip routes summary
     debug:
-      var: evidence_show_ip_routes_summary["stdout_lines"][0]
+      var: evidence_show_ip_routes_summary["stdout_lines"]
   - name: display evidence show hardware real-time-information
     debug:
-      var: evidence_show_hardware_real_time_information["stdout_lines"][0]
+      var: evidence_show_hardware_real_time_information["stdout_lines"]
   - name: display evidence show ntp associations
     debug:
-      var: evidence_show_ntp_associations["stdout_lines"][0]
+      var: evidence_show_ntp_associations["stdout_lines"]
   - name: display evidence show omp peers
     debug:
-      var: evidence_show_omp_peers["stdout_lines"][0]
+      var: evidence_show_omp_peers["stdout_lines"]
   - name: display evidence show omp summary
     debug:
-      var: evidence_show_omp_summary["stdout_lines"][0]
+      var: evidence_show_omp_summary["stdout_lines"]
   - name: display evidence show omp routes
     debug:
-      var: evidence_show_omp_routes["stdout_lines"][0]
+      var: evidence_show_omp_routes["stdout_lines"]
   - name: display evidence show tunnel statistics
     debug:
-      var: evidence_show_tunnel_statistics["stdout_lines"][0]
+      var: evidence_show_tunnel_statistics["stdout_lines"]
   - name: display evidence show ntp status
     debug:
-      var: evidence_show_ntp_status["stdout_lines"][0]
+      var: evidence_show_ntp_status["stdout_lines"]
   - name: display evidence show tunnel statistics
     debug:
-      var: evidence_show_tunnel_statistics["stdout_lines"][0]
+      var: evidence_show_tunnel_statistics["stdout_lines"]
   - name: display evidence show ipsec inbound-connections
     debug:
-      var: evidence_show_ipsec_inbound_connections["stdout_lines"][0]
+      var: evidence_show_ipsec_inbound_connections["stdout_lines"]
   - name: display evidence show ipsec outbound-connections
     debug:
-      var: evidence_show_ipsec_outbound_connections["stdout_lines"][0]
+      var: evidence_show_ipsec_outbound_connections["stdout_lines"]
   - name: display evidence show bfd summary
     debug:
-      var: evidence_show_bfd_summary["stdout_lines"][0]
+      var: evidence_show_bfd_summary["stdout_lines"]
   - name: display evidence show bfd sessions
     debug:
-      var: evidence_show_bfd_sessions["stdout_lines"][0]
+      var: evidence_show_bfd_sessions["stdout_lines"]
   - name: display evidence show control connections-history
     debug:
-      var: evidence_show_control_connections_history["stdout_lines"][0]
+      var: evidence_show_control_connections_history["stdout_lines"]
   - name: display evidence show running-config
     debug:
-      var: evidence_show_running_config["stdout_lines"][0]
+      var: evidence_show_running_config["stdout_lines"]
   - name: display evidence show logging
     debug:
-      var: evidence_show_logging["stdout_lines"][0]
+      var: evidence_show_logging["stdout_lines"]
   - name: display evidence show system
     debug:
-      var: evidence_show_system["stdout_lines"][0]
+      var: evidence_show_system["stdout_lines"]
   - name: display evidence show software
     debug:
-      var: evidence_show_software["stdout_lines"][0]
+      var: evidence_show_software["stdout_lines"]
   - name: display evidence show clock
     debug:
-      var: evidence_show_clock["stdout_lines"][0]
+      var: evidence_show_clock["stdout_lines"]
   - name: display evidence show policy from-vsmart
     debug:
-      var: evidence_show_policy_from_vsmart["stdout_lines"][0]
+      var: evidence_show_policy_from_vsmart["stdout_lines"]
   - name: display evidence show system statu
     debug:
-      var: evidence_show_system_statu["stdout_lines"][0]
+      var: evidence_show_system_statu["stdout_lines"]
