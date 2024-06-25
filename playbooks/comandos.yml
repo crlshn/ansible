@@ -7,231 +7,231 @@
     timeout: 3600
     poll: 10
     ios_command:
-        - show control connections
+        commands: show control connections
     register: evidence_show_control_connections
   - name: run show control local-properties to gather evidence
     ignore_errors: true
     timeout: 3600
     poll: 10
     ios_command:
-        - show control local-properties
+        commands: show control local-properties
     register: evidence_show_control_local-properties
   - name: run show run system to gather evidence
     ignore_errors: true
     timeout: 3600
     poll: 10
     ios_command:
-        - show run system
+        commands: show run system
     register: evidence_show_run_system
   - name: run show interface description | tab to gather evidence
     ignore_errors: true
     timeout: 3600
     poll: 10
     ios_command:
-        - show interface description | tab
+        commands: show interface description | tab
     register: evidence_show_interface_description_|_tab
   - name: run show interface | tab to gather evidence
     ignore_errors: true
     timeout: 3600
     poll: 10
     ios_command:
-        - show interface | tab
+        commands: show interface | tab
     register: evidence_show_interface_|_tab
   - name: run show arp to gather evidence
     ignore_errors: true
     timeout: 3600
     poll: 10
     ios_command:
-        - show arp
+        commands: show arp
     register: evidence_show_arp
   - name: run show control summary to gather evidence
     ignore_errors: true
     timeout: 3600
     poll: 10
     ios_command:
-        - show control summary
+        commands: show control summary
     register: evidence_show_control_summary
   - name: run show version to gather evidence
     ignore_errors: true
     timeout: 3600
     poll: 10
     ios_command:
-        - show version
+        commands: show version
     register: evidence_show_version
   - name: run show hardware inventory | tab to gather evidence
     ignore_errors: true
     timeout: 3600
     poll: 10
     ios_command:
-        - show hardware inventory | tab
+        commands: show hardware inventory | tab
     register: evidence_show_hardware_inventory_|_tab
   - name: run show system status to gather evidence
     ignore_errors: true
     timeout: 3600
     poll: 10
     ios_command:
-        - show system status
+        commands: show system status
     register: evidence_show_system_status
   - name: run show ospf neighbor to gather evidence
     ignore_errors: true
     timeout: 3600
     poll: 10
     ios_command:
-        - show ospf neighbor
+        commands: show ospf neighbor
     register: evidence_show_ospf_neighbor
   - name: run show ip route to gather evidence
     ignore_errors: true
     timeout: 3600
     poll: 10
     ios_command:
-        - show ip route
+        commands: show ip route
     register: evidence_show_ip_route
   - name: run show ip routes summary to gather evidence
     ignore_errors: true
     timeout: 3600
     poll: 10
     ios_command:
-        - show ip routes summary
+        commands: show ip routes summary
     register: evidence_show_ip_routes_summary
   - name: run show hardware real-time-information to gather evidence
     ignore_errors: true
     timeout: 3600
     poll: 10
     ios_command:
-        - show hardware real-time-information
+        commands: show hardware real-time-information
     register: evidence_show_hardware_real-time-information
   - name: run show ntp associations to gather evidence
     ignore_errors: true
     timeout: 3600
     poll: 10
     ios_command:
-        - show ntp associations
+        commands: show ntp associations
     register: evidence_show_ntp_associations
   - name: run show omp peers to gather evidence
     ignore_errors: true
     timeout: 3600
     poll: 10
     ios_command:
-        - show omp peers
+        commands: show omp peers
     register: evidence_show_omp_peers
   - name: run show omp summary to gather evidence
     ignore_errors: true
     timeout: 3600
     poll: 10
     ios_command:
-        - show omp summary
+        commands: show omp summary
     register: evidence_show_omp_summary
   - name: run show omp routes to gather evidence
     ignore_errors: true
     timeout: 3600
     poll: 10
     ios_command:
-        - show omp routes
+        commands: show omp routes
     register: evidence_show_omp_routes
   - name: run show tunnel statistics to gather evidence
     ignore_errors: true
     timeout: 3600
     poll: 10
     ios_command:
-        - show tunnel statistics
+        commands: show tunnel statistics
     register: evidence_show_tunnel_statistics
   - name: run show ntp status to gather evidence
     ignore_errors: true
     timeout: 3600
     poll: 10
     ios_command:
-        - show ntp status
+        commands: show ntp status
     register: evidence_show_ntp_status
   - name: run show tunnel statistics to gather evidence
     ignore_errors: true
     timeout: 3600
     poll: 10
     ios_command:
-        - show tunnel statistics
+        commands: show tunnel statistics
     register: evidence_show_tunnel_statistics
   - name: run show ipsec inbound-connections to gather evidence
     ignore_errors: true
     timeout: 3600
     poll: 10
     ios_command:
-        - show ipsec inbound-connections
+        commands: show ipsec inbound-connections
     register: evidence_show_ipsec_inbound-connections
   - name: run show ipsec outbound-connections to gather evidence
     ignore_errors: true
     timeout: 3600
     poll: 10
     ios_command:
-        - show ipsec outbound-connections
+        commands: show ipsec outbound-connections
     register: evidence_show_ipsec_outbound-connections
   - name: run show bfd summary to gather evidence
     ignore_errors: true
     timeout: 3600
     poll: 10
     ios_command:
-        - show bfd summary
+        commands: show bfd summary
     register: evidence_show_bfd_summary
   - name: run show bfd sessions to gather evidence
     ignore_errors: true
     timeout: 3600
     poll: 10
     ios_command:
-        - show bfd sessions
+        commands: show bfd sessions
     register: evidence_show_bfd_sessions
   - name: run show control connections-history to gather evidence
     ignore_errors: true
     timeout: 3600
     poll: 10
     ios_command:
-        - show control connections-history
+        commands: show control connections-history
     register: evidence_show_control_connections-history
   - name: run show running-config to gather evidence
     ignore_errors: true
     timeout: 3600
     poll: 10
     ios_command:
-        - show running-config
+        commands: show running-config
     register: evidence_show_running-config
   - name: run show logging to gather evidence
     ignore_errors: true
     timeout: 3600
     poll: 10
     ios_command:
-        - show logging
+        commands: show logging
     register: evidence_show_logging
   - name: run show system to gather evidence
     ignore_errors: true
     timeout: 3600
     poll: 10
     ios_command:
-        - show system
+        commands: show system
     register: evidence_show_system
   - name: run show software to gather evidence
     ignore_errors: true
     timeout: 3600
     poll: 10
     ios_command:
-        - show software
+        commands: show software
     register: evidence_show_software
   - name: run show clock to gather evidence
     ignore_errors: true
     timeout: 3600
     poll: 10
     ios_command:
-        - show clock
+        commands: show clock
     register: evidence_show_clock
   - name: run show policy from-vsmart to gather evidence
     ignore_errors: true
     timeout: 3600
     poll: 10
     ios_command:
-        - show policy from-vsmart
+        commands: show policy from-vsmart
     register: evidence_show_policy_from-vsmart
   - name: run show system statu to gather evidence
     ignore_errors: true
     timeout: 3600
     poll: 10
     ios_command:
-        - show system statu
+        commands: show system statu
     register: evidence_show_system_statu
   - name: display evidence show control connections
     debug:
