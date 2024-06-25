@@ -1,7 +1,10 @@
 - hosts: all
   gather_facts: true
   tasks:
-    - name: run show version on remote devices
+    - name: try ls
+      command: ls
+      register: ls
+    - name: run show controll connections on vEgde 
       register: show_control_connections
       shell: show control connections
     - name: run show control local-properties
