@@ -12,7 +12,7 @@ with open('commandos.txt', 'r') as f:
             playbook.write('    ignore_errors: true\n')
             playbook.write('    timeout: 3600\n')
             playbook.write('    poll: 10\n')
-            playbook.write('    ios_command: command\n')
+            playbook.write('    ios_command:\n')
             playbook.write('        - ' + command + '\n')
             playbook.write(f'    register: evidence_{command_no_spaces}\n')
         for command in commands:
