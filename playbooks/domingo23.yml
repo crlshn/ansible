@@ -1,22 +1,10 @@
+---
 - hosts: all
-  gather_facts: true
+  gather_facts: false
   tasks:
     - name: try ls
       command: ls
       register: ls
-    - name: run show controll connections on vEgde 
-      register: show_control_connections
-      shell: show control connections
-    - name: run show control local-properties
-      register: show_control_local_properties
-      command: show control local-properties
-
-
-
-
-
-
-    - name: show control connections
-      debug: var=show_control_connections.stdout_lines
-    - name: show control local-properties
-      debug: var=show_control_local_properties.stdout_lines
+    - name: GATHERING FACTS
+      ios_facts:
+        gather_subset: hardware
