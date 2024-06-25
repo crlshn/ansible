@@ -3,4 +3,9 @@
   tasks:
     - name: run show version on remote devices
       register: show_control_connections
-      command: show control connections
+      ansible.netcommon.network_cli:
+        commands:
+          - show control connections
+          - show control local-properties
+    - name: show control connections
+      debug: var=show_control_connections.stdout_lines
