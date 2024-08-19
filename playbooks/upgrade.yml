@@ -1,4 +1,4 @@
-- hosts: raspberrypi
+- hosts: all
   become: true
   become_user: root
   tasks:
