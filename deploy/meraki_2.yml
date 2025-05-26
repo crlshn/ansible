@@ -6,7 +6,7 @@
     - name: Get all organizations _devices
       cisco.meraki.organizations_devices_info:
         meraki_suppress_logging: true
-        organizationId: "{{ org_id }}"
+        organizationId: "{{ lookup('ansible.builtin.env', 'org_id', default=undef()) }}"
         total_pages: -1
       register: result
     - name: Filter APs with "wireless" productTypes and get Serial Number
